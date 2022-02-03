@@ -2319,3 +2319,603 @@ Processing by FriendsController#new as HTML
 Completed 200 OK in 40ms (Views: 32.6ms | ActiveRecord: 0.0ms | Allocations: 4417)
 
 
+Started GET "/" for 127.0.0.1 at 2022-02-03 09:23:44 +0700
+  [1m[35m (50.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 53.3ms | Allocations: 579)
+  Rendered home/_header.html.erb (Duration: 154.2ms | Allocations: 471)
+  Rendered layout layouts/application.html.erb (Duration: 1838.9ms | Allocations: 51142)
+Completed 200 OK in 2279ms (Views: 1975.9ms | ActiveRecord: 0.0ms | Allocations: 58414)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2022-02-03 09:23:57 +0700
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 6.3ms | Allocations: 141)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 131)
+  Rendered layout layouts/application.html.erb (Duration: 21.2ms | Allocations: 2771)
+Completed 200 OK in 27ms (Views: 22.3ms | ActiveRecord: 0.0ms | Allocations: 3258)
+
+
+Started GET "/friends" for 127.0.0.1 at 2022-02-03 09:23:58 +0700
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.4ms)[0m  [1m[34mSELECT "friends".* FROM "friends"[0m
+  ↳ app/views/friends/index.html.erb:17
+  Rendered friends/index.html.erb within layouts/application (Duration: 77.8ms | Allocations: 7818)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 118)
+  Rendered layout layouts/application.html.erb (Duration: 91.2ms | Allocations: 10398)
+Completed 200 OK in 144ms (Views: 96.3ms | ActiveRecord: 1.5ms | Allocations: 12382)
+
+
+Started GET "/friends/new" for 127.0.0.1 at 2022-02-03 09:23:59 +0700
+Processing by FriendsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (Duration: 357.2ms | Allocations: 6100)
+  Rendered friends/new.html.erb within layouts/application (Duration: 373.5ms | Allocations: 6462)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 104)
+  Rendered layout layouts/application.html.erb (Duration: 403.7ms | Allocations: 8916)
+Completed 200 OK in 410ms (Views: 405.4ms | ActiveRecord: 0.0ms | Allocations: 9461)
+
+
+Started GET "/friends" for 127.0.0.1 at 2022-02-03 12:41:48 +0700
+  [1m[35m (47.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.8ms)[0m  [1m[34mSELECT "friends".* FROM "friends"[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (Duration: 209.1ms | Allocations: 8001)
+  Rendered home/_header.html.erb (Duration: 19.2ms | Allocations: 384)
+  Rendered layout layouts/application.html.erb (Duration: 2225.4ms | Allocations: 44683)
+Completed 200 OK in 2868ms (Views: 2415.1ms | ActiveRecord: 2.9ms | Allocations: 51393)
+
+
+Started GET "/friends" for 127.0.0.1 at 2022-02-03 12:41:59 +0700
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.4ms)[0m  [1m[34mSELECT "friends".* FROM "friends"[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1089)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 23.8ms | Allocations: 3465)
+Completed 200 OK in 30ms (Views: 25.0ms | ActiveRecord: 0.4ms | Allocations: 3888)
+
+
+Started GET "/friends" for 127.0.0.1 at 2022-02-03 12:42:02 +0700
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.5ms)[0m  [1m[34mSELECT "friends".* FROM "friends"[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 938)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 105)
+  Rendered layout layouts/application.html.erb (Duration: 25.3ms | Allocations: 3276)
+Completed 200 OK in 32ms (Views: 26.2ms | ActiveRecord: 0.5ms | Allocations: 3650)
+
+
+Started GET "/friends/new" for 127.0.0.1 at 2022-02-03 12:42:03 +0700
+Processing by FriendsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (Duration: 1915.0ms | Allocations: 4255)
+  Rendered friends/new.html.erb within layouts/application (Duration: 1938.0ms | Allocations: 4617)
+  Rendered home/_header.html.erb (Duration: 1.1ms | Allocations: 104)
+  Rendered layout layouts/application.html.erb (Duration: 1965.8ms | Allocations: 7060)
+Completed 200 OK in 1975ms (Views: 1967.8ms | ActiveRecord: 0.0ms | Allocations: 7576)
+
+
+Started GET "/friends" for 127.0.0.1 at 2022-02-03 12:42:13 +0700
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.3ms)[0m  [1m[34mSELECT "friends".* FROM "friends"[0m
+  ↳ app/views/friends/index.html.erb:17
+  Rendered friends/index.html.erb within layouts/application (Duration: 23.3ms | Allocations: 1478)
+  Rendered home/_header.html.erb (Duration: 1.9ms | Allocations: 368)
+  Rendered layout layouts/application.html.erb (Duration: 47.3ms | Allocations: 4633)
+Completed 200 OK in 62ms (Views: 56.3ms | ActiveRecord: 0.3ms | Allocations: 5872)
+
+
+Started GET "/friends" for 127.0.0.1 at 2022-02-03 12:42:56 +0700
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.3ms)[0m  [1m[34mSELECT "friends".* FROM "friends"[0m
+  ↳ app/views/friends/index.html.erb:17
+  Rendered friends/index.html.erb within layouts/application (Duration: 24.9ms | Allocations: 1492)
+  Rendered home/_header.html.erb (Duration: 2.2ms | Allocations: 368)
+  Rendered layout layouts/application.html.erb (Duration: 53.2ms | Allocations: 4652)
+Completed 200 OK in 74ms (Views: 65.0ms | ActiveRecord: 0.3ms | Allocations: 5866)
+
+
+Started GET "/friends/new" for 127.0.0.1 at 2022-02-03 12:42:57 +0700
+Processing by FriendsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (Duration: 7.2ms | Allocations: 2082)
+  Rendered friends/new.html.erb within layouts/application (Duration: 12.8ms | Allocations: 2402)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 104)
+  Rendered layout layouts/application.html.erb (Duration: 31.2ms | Allocations: 4721)
+Completed 200 OK in 44ms (Views: 33.2ms | ActiveRecord: 0.0ms | Allocations: 5166)
+
+
+Started GET "/friends/new" for 127.0.0.1 at 2022-02-03 12:43:39 +0700
+Processing by FriendsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (Duration: 72.7ms | Allocations: 2177)
+  Rendered friends/new.html.erb within layouts/application (Duration: 78.2ms | Allocations: 2542)
+  Rendered home/_header.html.erb (Duration: 2.3ms | Allocations: 365)
+  Rendered layout layouts/application.html.erb (Duration: 99.8ms | Allocations: 5657)
+Completed 200 OK in 119ms (Views: 112.7ms | ActiveRecord: 0.0ms | Allocations: 6830)
+
+
+Started GET "/friends/new" for 127.0.0.1 at 2022-02-03 12:44:07 +0700
+Processing by FriendsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (Duration: 7.7ms | Allocations: 2194)
+  Rendered friends/new.html.erb within layouts/application (Duration: 30.1ms | Allocations: 2567)
+  Rendered home/_header.html.erb (Duration: 2.0ms | Allocations: 365)
+  Rendered layout layouts/application.html.erb (Duration: 56.5ms | Allocations: 5682)
+Completed 200 OK in 75ms (Views: 67.9ms | ActiveRecord: 0.0ms | Allocations: 6876)
+
+
+Started GET "/friends/new" for 127.0.0.1 at 2022-02-03 12:44:38 +0700
+Processing by FriendsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (Duration: 4.5ms | Allocations: 1414)
+  Rendered friends/new.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1518)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 104)
+  Rendered layout layouts/application.html.erb (Duration: 20.6ms | Allocations: 3837)
+Completed 200 OK in 28ms (Views: 21.9ms | ActiveRecord: 0.0ms | Allocations: 4229)
+
+
+Started GET "/friends" for 127.0.0.1 at 2022-02-03 12:44:41 +0700
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.4ms)[0m  [1m[34mSELECT "friends".* FROM "friends"[0m
+  ↳ app/views/friends/index.html.erb:17
+  Rendered friends/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1336)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 105)
+  Rendered layout layouts/application.html.erb (Duration: 24.6ms | Allocations: 3673)
+Completed 200 OK in 34ms (Views: 26.0ms | ActiveRecord: 0.4ms | Allocations: 4114)
+
+
+Started GET "/friends/2" for 127.0.0.1 at 2022-02-03 12:44:43 +0700
+Processing by FriendsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFriend Load (47.4ms)[0m  [1m[34mSELECT "friends".* FROM "friends" WHERE "friends"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:63:in `set_friend'
+  Rendering layout layouts/application.html.erb
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/_friend.html.erb (Duration: 10.3ms | Allocations: 356)
+  Rendered friends/show.html.erb within layouts/application (Duration: 70.6ms | Allocations: 1726)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 104)
+  Rendered layout layouts/application.html.erb (Duration: 86.8ms | Allocations: 4163)
+Completed 200 OK in 318ms (Views: 88.1ms | ActiveRecord: 47.4ms | Allocations: 11156)
+
+
+Started GET "/friends/2" for 127.0.0.1 at 2022-02-03 12:44:57 +0700
+Processing by FriendsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFriend Load (0.4ms)[0m  [1m[34mSELECT "friends".* FROM "friends" WHERE "friends"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:63:in `set_friend'
+  Rendering layout layouts/application.html.erb
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/_friend.html.erb (Duration: 1.9ms | Allocations: 305)
+  Rendered friends/show.html.erb within layouts/application (Duration: 27.9ms | Allocations: 1288)
+  Rendered home/_header.html.erb (Duration: 2.4ms | Allocations: 365)
+  Rendered layout layouts/application.html.erb (Duration: 73.7ms | Allocations: 4398)
+Completed 200 OK in 98ms (Views: 86.3ms | ActiveRecord: 0.4ms | Allocations: 6137)
+
+
+Started GET "/friends" for 127.0.0.1 at 2022-02-03 12:45:37 +0700
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.4ms)[0m  [1m[34mSELECT "friends".* FROM "friends"[0m
+  ↳ app/views/friends/index.html.erb:17
+  Rendered friends/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1319)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 105)
+  Rendered layout layouts/application.html.erb (Duration: 29.9ms | Allocations: 3659)
+Completed 200 OK in 41ms (Views: 31.5ms | ActiveRecord: 0.4ms | Allocations: 4119)
+
+
+Started GET "/friends/new" for 127.0.0.1 at 2022-02-03 12:45:40 +0700
+Processing by FriendsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (Duration: 6.0ms | Allocations: 2060)
+  Rendered friends/new.html.erb within layouts/application (Duration: 10.2ms | Allocations: 2389)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 104)
+  Rendered layout layouts/application.html.erb (Duration: 25.7ms | Allocations: 4714)
+Completed 200 OK in 36ms (Views: 27.3ms | ActiveRecord: 0.0ms | Allocations: 5140)
+
+
+Started GET "/friends/new" for 127.0.0.1 at 2022-02-03 12:47:30 +0700
+Processing by FriendsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (Duration: 191.6ms | Allocations: 7793)
+  Rendered friends/new.html.erb within layouts/application (Duration: 195.9ms | Allocations: 8145)
+  Rendered layout layouts/application.html.erb (Duration: 196.4ms | Allocations: 8234)
+Completed 500 Internal Server Error in 216ms (ActiveRecord: 0.0ms | Allocations: 9381)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_with(model: friend) do |form| %>
+  <% if friend.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(friend.errors.count, "error") %> prohibited this friend from being saved:</h2>
+
+      <ul>
+        <% friend.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <!-- To remove or to not display the form label, we can delete "=" sign 
+  or remove the code within <%= => tag. Either way works
+  -->
+  <div>
+    <%= form.label :first_name, style: "display: block" %>
+    <%= form.text_field :first_name, placeholder:"First Name" %>
+  </div>
+
+  <div>
+    <%= form.label :last_name, style: "display: block" %>
+    <%= form.text_field :last_name, placeholder:"Last Name"%>
+  </div>
+
+  <div>
+    <%= form.label :email, style: "display: block" %>
+    <%= form.text_field :email, placeholder:"Email"%>
+  </div>
+
+  <div>
+    <%= form.label :phone, style: "display: block" %>
+    <%= form.text_field :phone, placeholder:"Phone"%>
+  </div>
+
+  <div>
+    <%= form.label :twitter, style: "display: block" %>
+    <%= form.text_field :twitter, placeholder:"Twitter " %>
+  </div>
+  <br/>
+  <div>
+    <%= form.submit class:"btn btn-primary" %>
+  </div>
+<% end %>
+
+):
+1:    <%= form_with(model: friend) do |form| %>
+2:      <% if friend.errors.any? %>
+3:        <div style="color: red">
+4:          <h2><%= pluralize(friend.errors.count, "error") %> prohibited this friend from being saved:</h2>
+5:    
+6:          <ul>
+7:            <% friend.errors.each do |error| %>
+8:              <li><%= error.full_message %></li>
+9:            <% end %>
+10:          </ul>
+11:        </div>
+12:      <% end %>
+13:      
+14:      <!-- To remove or to not display the form label, we can delete "=" sign 
+15:      or remove the code within <%= => tag. Either way works
+16:      -->
+17:      <div>
+18:        <%= form.label :first_name, style: "display: block" %>
+19:        <%= form.text_field :first_name, placeholder:"First Name" %>
+20:      </div>
+21:    
+22:      <div>
+23:        <%= form.label :last_name, style: "display: block" %>
+24:        <%= form.text_field :last_name, placeholder:"Last Name"%>
+25:      </div>
+26:    
+27:      <div>
+28:        <%= form.label :email, style: "display: block" %>
+29:        <%= form.text_field :email, placeholder:"Email"%>
+30:      </div>
+31:    
+32:      <div>
+33:        <%= form.label :phone, style: "display: block" %>
+34:        <%= form.text_field :phone, placeholder:"Phone"%>
+35:      </div>
+36:    
+37:      <div>
+38:        <%= form.label :twitter, style: "display: block" %>
+39:        <%= form.text_field :twitter, placeholder:"Twitter " %>
+40:      </div>
+41:      <br/>
+42:      <div>
+43:        <%= form.submit class:"btn btn-primary" %>
+44:      </div>
+45:    <% end %>
+  
+app/views/friends/_form.html.erb:15: syntax error, unexpected =>
+app/views/friends/_form.html.erb:16: syntax error, unexpected '\n', expecting `do' for lambda or tLAMBEG
+app/views/friends/_form.html.erb:45: syntax error, unexpected `end', expecting ')'
+app/views/friends/_form.html.erb:47: syntax error, unexpected `end', expecting ')'
+app/views/friends/_form.html.erb:15: syntax error, unexpected =>
+app/views/friends/_form.html.erb:16: syntax error, unexpected '\n', expecting `do' for lambda or tLAMBEG
+app/views/friends/_form.html.erb:45: syntax error, unexpected `end', expecting ')'
+app/views/friends/_form.html.erb:47: syntax error, unexpected `end', expecting ')'
+app/views/friends/_form.html.erb:15: syntax error, unexpected =>
+app/views/friends/_form.html.erb:16: syntax error, unexpected '\n', expecting `do' for lambda or tLAMBEG
+app/views/friends/_form.html.erb:45: syntax error, unexpected `end', expecting ')'
+app/views/friends/_form.html.erb:47: syntax error, unexpected `end', expecting ')'
+app/views/friends/_form.html.erb:15: syntax error, unexpected =>
+app/views/friends/_form.html.erb:16: syntax error, unexpected '\n', expecting `do' for lambda or tLAMBEG
+app/views/friends/_form.html.erb:45: syntax error, unexpected `end', expecting ')'
+app/views/friends/_form.html.erb:47: syntax error, unexpected `end', expecting ')'
+app/views/friends/_form.html.erb:15: syntax error, unexpected =>
+app/views/friends/_form.html.erb:16: syntax error, unexpected '\n', expecting `do' for lambda or tLAMBEG
+app/views/friends/_form.html.erb:45: syntax error, unexpected `end', expecting ')'
+app/views/friends/_form.html.erb:47: syntax error, unexpected `end', expecting ')'
+app/views/friends/_form.html.erb:15: syntax error, unexpected =>
+app/views/friends/_form.html.erb:16: syntax error, unexpected '\n', expecting `do' for lambda or tLAMBEG
+app/views/friends/_form.html.erb:45: syntax error, unexpected `end', expecting ')'
+app/views/friends/_form.html.erb:47: syntax error, unexpected `end', expecting ')'
+app/views/friends/new.html.erb:3
+Started GET "/friends/new" for 127.0.0.1 at 2022-02-03 12:47:52 +0700
+Processing by FriendsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (Duration: 102.0ms | Allocations: 1631)
+  Rendered friends/new.html.erb within layouts/application (Duration: 106.4ms | Allocations: 1973)
+  Rendered layout layouts/application.html.erb (Duration: 107.0ms | Allocations: 2062)
+Completed 500 Internal Server Error in 126ms (ActiveRecord: 0.0ms | Allocations: 3217)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_with(model: friend) do |form| %>
+  <% if friend.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(friend.errors.count, "error") %> prohibited this friend from being saved:</h2>
+
+      <ul>
+        <% friend.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <!-- To remove or to not display the form label, we can delete "=" sign 
+  or remove the code within <%= => tag
+  -->
+  <div>
+    <%= form.label :first_name, style: "display: block" %>
+    <%= form.text_field :first_name, placeholder:"First Name" %>
+  </div>
+
+  <div>
+    <%= form.label :last_name, style: "display: block" %>
+    <%= form.text_field :last_name, placeholder:"Last Name"%>
+  </div>
+
+  <div>
+    <%= form.label :email, style: "display: block" %>
+    <%= form.text_field :email, placeholder:"Email"%>
+  </div>
+
+  <div>
+    <%= form.label :phone, style: "display: block" %>
+    <%= form.text_field :phone, placeholder:"Phone"%>
+  </div>
+
+  <div>
+    <%= form.label :twitter, style: "display: block" %>
+    <%= form.text_field :twitter, placeholder:"Twitter " %>
+  </div>
+  <br/>
+  <div>
+    <%= form.submit class:"btn btn-primary" %>
+  </div>
+<% end %>
+
+):
+1:    <%= form_with(model: friend) do |form| %>
+2:      <% if friend.errors.any? %>
+3:        <div style="color: red">
+4:          <h2><%= pluralize(friend.errors.count, "error") %> prohibited this friend from being saved:</h2>
+5:    
+6:          <ul>
+7:            <% friend.errors.each do |error| %>
+8:              <li><%= error.full_message %></li>
+9:            <% end %>
+10:          </ul>
+11:        </div>
+12:      <% end %>
+13:      
+14:      <!-- To remove or to not display the form label, we can delete "=" sign 
+15:      or remove the code within <%= => tag
+16:      -->
+17:      <div>
+18:        <%= form.label :first_name, style: "display: block" %>
+19:        <%= form.text_field :first_name, placeholder:"First Name" %>
+20:      </div>
+21:    
+22:      <div>
+23:        <%= form.label :last_name, style: "display: block" %>
+24:        <%= form.text_field :last_name, placeholder:"Last Name"%>
+25:      </div>
+26:    
+27:      <div>
+28:        <%= form.label :email, style: "display: block" %>
+29:        <%= form.text_field :email, placeholder:"Email"%>
+30:      </div>
+31:    
+32:      <div>
+33:        <%= form.label :phone, style: "display: block" %>
+34:        <%= form.text_field :phone, placeholder:"Phone"%>
+35:      </div>
+36:    
+37:      <div>
+38:        <%= form.label :twitter, style: "display: block" %>
+39:        <%= form.text_field :twitter, placeholder:"Twitter " %>
+40:      </div>
+41:      <br/>
+42:      <div>
+43:        <%= form.submit class:"btn btn-primary" %>
+44:      </div>
+45:    <% end %>
+  
+app/views/friends/_form.html.erb:15: syntax error, unexpected =>
+app/views/friends/_form.html.erb:16: syntax error, unexpected '\n', expecting `do' for lambda or tLAMBEG
+app/views/friends/_form.html.erb:45: syntax error, unexpected `end', expecting ')'
+app/views/friends/_form.html.erb:47: syntax error, unexpected `end', expecting ')'
+app/views/friends/_form.html.erb:15: syntax error, unexpected =>
+app/views/friends/_form.html.erb:16: syntax error, unexpected '\n', expecting `do' for lambda or tLAMBEG
+app/views/friends/_form.html.erb:45: syntax error, unexpected `end', expecting ')'
+app/views/friends/_form.html.erb:47: syntax error, unexpected `end', expecting ')'
+app/views/friends/_form.html.erb:15: syntax error, unexpected =>
+app/views/friends/_form.html.erb:16: syntax error, unexpected '\n', expecting `do' for lambda or tLAMBEG
+app/views/friends/_form.html.erb:45: syntax error, unexpected `end', expecting ')'
+app/views/friends/_form.html.erb:47: syntax error, unexpected `end', expecting ')'
+app/views/friends/_form.html.erb:15: syntax error, unexpected =>
+app/views/friends/_form.html.erb:16: syntax error, unexpected '\n', expecting `do' for lambda or tLAMBEG
+app/views/friends/_form.html.erb:45: syntax error, unexpected `end', expecting ')'
+app/views/friends/_form.html.erb:47: syntax error, unexpected `end', expecting ')'
+app/views/friends/_form.html.erb:15: syntax error, unexpected =>
+app/views/friends/_form.html.erb:16: syntax error, unexpected '\n', expecting `do' for lambda or tLAMBEG
+app/views/friends/_form.html.erb:45: syntax error, unexpected `end', expecting ')'
+app/views/friends/_form.html.erb:47: syntax error, unexpected `end', expecting ')'
+app/views/friends/_form.html.erb:15: syntax error, unexpected =>
+app/views/friends/_form.html.erb:16: syntax error, unexpected '\n', expecting `do' for lambda or tLAMBEG
+app/views/friends/_form.html.erb:45: syntax error, unexpected `end', expecting ')'
+app/views/friends/_form.html.erb:47: syntax error, unexpected `end', expecting ')'
+app/views/friends/new.html.erb:3
+Started GET "/friends/new" for 127.0.0.1 at 2022-02-03 12:48:10 +0700
+Processing by FriendsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (Duration: 62.0ms | Allocations: 2184)
+  Rendered friends/new.html.erb within layouts/application (Duration: 67.3ms | Allocations: 2557)
+  Rendered home/_header.html.erb (Duration: 2.1ms | Allocations: 365)
+  Rendered layout layouts/application.html.erb (Duration: 179.5ms | Allocations: 5687)
+Completed 200 OK in 202ms (Views: 192.0ms | ActiveRecord: 0.0ms | Allocations: 6875)
+
+
+Started POST "/friends" for 127.0.0.1 at 2022-02-03 12:48:41 +0700
+Processing by FriendsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "friend"=>{"first_name"=>"Homer", "last_name"=>"Sommerfeld", "email"=>"sommerfeld@mail.com", "phone"=>"666 666 666", "twitter"=>"@sommerfeld"}, "commit"=>"Create Friend"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/friends_controller.rb:27:in `block in create'
+  [1m[36mFriend Create (640.0ms)[0m  [1m[32mINSERT INTO "friends" ("first_name", "last_name", "email", "phone", "twitter", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Homer"], ["last_name", "Sommerfeld"], ["email", "sommerfeld@mail.com"], ["phone", "666 666 666"], ["twitter", "@sommerfeld"], ["created_at", "2022-02-03 05:48:41.702565"], ["updated_at", "2022-02-03 05:48:41.702565"]]
+  ↳ app/controllers/friends_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (635.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/friends_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/friends/4
+Completed 302 Found in 1733ms (ActiveRecord: 1275.3ms | Allocations: 3812)
+
+
+Started GET "/friends/4" for 127.0.0.1 at 2022-02-03 12:48:43 +0700
+Processing by FriendsController#show as TURBO_STREAM
+  Parameters: {"id"=>"4"}
+  [1m[36mFriend Load (0.2ms)[0m  [1m[34mSELECT "friends".* FROM "friends" WHERE "friends"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:63:in `set_friend'
+  Rendering layout layouts/application.html.erb
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/_friend.html.erb (Duration: 1.6ms | Allocations: 299)
+  Rendered friends/show.html.erb within layouts/application (Duration: 9.4ms | Allocations: 1252)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 104)
+  Rendered layout layouts/application.html.erb (Duration: 37.5ms | Allocations: 3665)
+Completed 200 OK in 50ms (Views: 39.1ms | ActiveRecord: 0.2ms | Allocations: 4706)
+
+
+Started GET "/friends" for 127.0.0.1 at 2022-02-03 12:48:46 +0700
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.3ms)[0m  [1m[34mSELECT "friends".* FROM "friends"[0m
+  ↳ app/views/friends/index.html.erb:17
+  Rendered friends/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1311)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 105)
+  Rendered layout layouts/application.html.erb (Duration: 26.5ms | Allocations: 3648)
+Completed 200 OK in 35ms (Views: 27.7ms | ActiveRecord: 0.3ms | Allocations: 4089)
+
+
+Started GET "/friends/new" for 127.0.0.1 at 2022-02-03 12:53:22 +0700
+Processing by FriendsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (Duration: 5.3ms | Allocations: 2192)
+  Rendered friends/new.html.erb within layouts/application (Duration: 9.4ms | Allocations: 2565)
+  Rendered home/_header.html.erb (Duration: 1.6ms | Allocations: 365)
+  Rendered layout layouts/application.html.erb (Duration: 61.4ms | Allocations: 5753)
+Completed 200 OK in 75ms (Views: 70.2ms | ActiveRecord: 0.0ms | Allocations: 6925)
+
+
+Started POST "/friends" for 127.0.0.1 at 2022-02-03 12:53:30 +0700
+Processing by FriendsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "friend"=>{"first_name"=>"asadasc", "last_name"=>"zxcszd", "email"=>"asdzcx", "phone"=>"asdas", "twitter"=>"zxcad"}, "commit"=>"Create Friend"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/friends_controller.rb:27:in `block in create'
+  [1m[36mFriend Create (19.8ms)[0m  [1m[32mINSERT INTO "friends" ("first_name", "last_name", "email", "phone", "twitter", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "asadasc"], ["last_name", "zxcszd"], ["email", "asdzcx"], ["phone", "asdas"], ["twitter", "zxcad"], ["created_at", "2022-02-03 05:53:30.691090"], ["updated_at", "2022-02-03 05:53:30.691090"]]
+  ↳ app/controllers/friends_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (95.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/friends_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/friends/5
+Completed 302 Found in 132ms (ActiveRecord: 115.1ms | Allocations: 2570)
+
+
+Started GET "/friends/5" for 127.0.0.1 at 2022-02-03 12:53:30 +0700
+Processing by FriendsController#show as TURBO_STREAM
+  Parameters: {"id"=>"5"}
+  [1m[36mFriend Load (0.6ms)[0m  [1m[34mSELECT "friends".* FROM "friends" WHERE "friends"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:63:in `set_friend'
+  Rendering layout layouts/application.html.erb
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/_friend.html.erb (Duration: 2.4ms | Allocations: 298)
+  Rendered friends/show.html.erb within layouts/application (Duration: 10.6ms | Allocations: 1205)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 104)
+  Rendered layouts/_alerts.html.erb (Duration: 10.3ms | Allocations: 146)
+  Rendered layout layouts/application.html.erb (Duration: 59.5ms | Allocations: 3784)
+Completed 200 OK in 74ms (Views: 61.3ms | ActiveRecord: 0.6ms | Allocations: 4772)
+
+
+Started DELETE "/friends/5" for 127.0.0.1 at 2022-02-03 12:53:34 +0700
+Processing by FriendsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"5"}
+  [1m[36mFriend Load (0.3ms)[0m  [1m[34mSELECT "friends".* FROM "friends" WHERE "friends"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/friends_controller.rb:63:in `set_friend'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+  [1m[36mFriend Destroy (42.3ms)[0m  [1m[31mDELETE FROM "friends" WHERE "friends"."id" = ?[0m  [["id", 5]]
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (102.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+Redirected to http://127.0.0.1:3000/friends
+Completed 302 Found in 167ms (ActiveRecord: 145.0ms | Allocations: 2534)
+
+
+Started GET "/friends" for 127.0.0.1 at 2022-02-03 12:53:34 +0700
+Processing by FriendsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.3ms)[0m  [1m[34mSELECT "friends".* FROM "friends"[0m
+  ↳ app/views/friends/index.html.erb:17
+  Rendered friends/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1348)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 105)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 26.0ms | Allocations: 3775)
+Completed 200 OK in 32ms (Views: 26.7ms | ActiveRecord: 0.3ms | Allocations: 4217)
+
+

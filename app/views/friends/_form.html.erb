@@ -10,7 +10,10 @@
       </ul>
     </div>
   <% end %>
-
+  
+  <!-- To remove or to not display the form label, we can delete "=" sign 
+  or remove the code within tag
+  -->
   <div>
     <%= form.label :first_name, style: "display: block" %>
     <%= form.text_field :first_name, placeholder:"First Name" %>
@@ -35,7 +38,7 @@
     <%= form.label :twitter, style: "display: block" %>
     <%= form.text_field :twitter, placeholder:"Twitter " %>
   </div>
-
+  <br/>
   <div>
     <%= form.submit class:"btn btn-primary" %>
   </div>
